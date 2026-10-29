@@ -1,0 +1,32 @@
+
+*{box-sizing:border-box}
+:root{--page:#eaf3fb;--blue:#1648b8;--blue2:#092b91;--line:#6e9fe0;--text:#172f68;--paper:#fff}
+body{margin:0;color:var(--text);font-family:"MS PGothic","ＭＳ Ｐゴシック",Meiryo,sans-serif;background:var(--page)}
+a{color:#003ab4;font-weight:bold}a:hover{color:#b0007a}
+.site{width:min(1000px,calc(100% - 24px));margin:18px auto 30px}
+.banner{text-align:center;padding:23px 14px 18px;margin-bottom:16px;border:3px ridge #a8c8f0;background:linear-gradient(135deg,#d9ebff,#b7d6fa);color:#123c91;text-shadow:1px 1px white;box-shadow:0 2px 0 #7d9bc9}
+.banner h1{margin:0;font-size:clamp(25px,5vw,40px);letter-spacing:.07em}
+.banner p{margin:8px 0 0;font-weight:bold}
+.layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:16px;align-items:start}
+.panel,.main{background:var(--paper);border:2px solid var(--line);box-shadow:2px 2px 0 #c1d3ed;margin-bottom:14px}
+.panel-title{margin:0;padding:7px 10px;color:white;font-size:17px;background:linear-gradient(#376bd0,#173e9f);border-bottom:2px solid #b3d3ff}
+.panel-body{padding:12px}
+.navlist{list-style:none;padding:0;margin:0}
+.navlist li{padding:8px 2px;border-bottom:1px dotted #b3c8e8}
+.navlist li:last-child{border:0}
+.main{min-width:0}
+.main-head{margin:7px;padding:12px 14px;background:linear-gradient(90deg,#376bd0,#173e9f);color:white;border:2px ridge #9ab9ec;font-size:22px;font-weight:bold}
+.content{padding:10px 18px 22px}
+.notice{border:1px solid #9bb9e5;background:#f0f6ff;padding:10px 12px;margin:10px 0 18px}
+.test-link{display:block;padding:15px;margin:12px 0;border:2px solid #9bb9e5;background:linear-gradient(#fff,#edf4ff);text-decoration:none;font-size:18px}
+.test-link:hover{background:#dceaff}
+.question{border:1px solid #9bb9e5;background:white;margin:14px 0;box-shadow:2px 2px 0 #dce7f7}
+.question-title{padding:12px 14px 7px;font-weight:bold;line-height:1.8}
+.qnum{color:#a00068;margin-right:6px}
+.answer-toggle{margin:4px 12px 12px;padding:7px 10px;color:#123b9b;cursor:pointer;border:1px solid #8aaee2;background:linear-gradient(#fff,#e9f1ff);font:inherit;font-weight:bold;text-align:left;width:calc(100% - 24px)}
+.answer-toggle:hover{background:#dceaff}
+.answer{margin:0 12px 13px;padding:12px;background:#fff8dc;border:1px solid #dfc56a;color:#6d4300;font-weight:bold}
+.answer[hidden]{display:none}
+.small{color:#526789;font-size:13px}
+footer{text-align:center;padding:18px 8px;font-size:13px;font-weight:bold;color:#35558c}
+@media(max-width:680px){.layout{grid-template-columns:1fr}.content{padding:8px 12px 18px}}
